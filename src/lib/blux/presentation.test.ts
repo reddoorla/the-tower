@@ -15,11 +15,14 @@ const cell = (token: RenderCell["token"]): RenderCell => ({
 });
 
 describe("presentation", () => {
-  it("loadPresentation returns the checked-in manifest (empty until `blux convert`)", () => {
+  it("loadPresentation returns the checked-in converted the-tower manifest", () => {
     const p = loadPresentation();
-    // The starter ships the empty stub; a converted site's emit output has one
-    // entry per band, keyed by string index.
-    expect(p.bands).toEqual({});
+    // The manifest is the real convert output (12 bands, keyed by string
+    // index; band 6 has no manifest entry). Band 11 carries the co-located
+    // clickMap payload — 4 toggles over 8 KML layers.
+    expect(Object.keys(p.bands).length).toBe(12);
+    expect(bandFor(p, 11)?.map?.mid).toBeTruthy();
+    expect(bandFor(p, 11)?.map?.toggles.length).toBe(4);
   });
 
   it("bandFor looks up by band index and returns null when absent", () => {

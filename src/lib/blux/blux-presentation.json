@@ -1,1 +1,2312 @@
-{ "bands": {} }
+{
+  "bands": {
+    "0": {
+      "style": {
+        "text-align": "center",
+        "vertical-align": "middle",
+        "height": "90vh",
+        "_max-content-width": "none",
+        "_contentPadding": "0px"
+      },
+      "gallery": [
+        {
+          "kind": "image",
+          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/0b71e457-9fda-4eac-a728-d1ac7c74d309.jpg",
+          "alt": "tower-web-2.jpg",
+          "fit": "cover",
+          "minHeight": "90vh"
+        },
+        {
+          "kind": "image",
+          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/54ecd8d5-0c8d-4fd4-8826-ceb3a8c52792.jpg",
+          "alt": "tower-web-4.jpg",
+          "fit": "cover",
+          "minHeight": "100vh"
+        }
+      ]
+    },
+    "1": {
+      "style": {
+        "text-align": "center",
+        "vertical-align": "middle",
+        "_max-content-width": "none",
+        "_contentPadding": "0px"
+      },
+      "tree": {
+        "kind": "row",
+        "cells": [
+          {
+            "token": {
+              "cols": 2
+            },
+            "node": {
+              "kind": "stack",
+              "children": [
+                {
+                  "kind": "heading",
+                  "level": 1,
+                  "html": "the tower",
+                  "role": "text11",
+                  "style": {
+                    "padding": "0px 0px 20px",
+                    "color": "rgb(255, 255, 255)"
+                  }
+                },
+                {
+                  "kind": "media",
+                  "media": {
+                    "kind": "image",
+                    "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/9a8bd2ff-376f-4421-8a50-58939953da97.png",
+                    "alt": "line-white.png",
+                    "width": 50,
+                    "aspect": 22.024,
+                    "fit": "contain"
+                  }
+                },
+                {
+                  "kind": "heading",
+                  "level": 5,
+                  "html": "Stand above the rest",
+                  "role": "text10",
+                  "style": {
+                    "padding": "20px 0px 0px",
+                    "color": "rgb(255, 255, 255)"
+                  }
+                }
+              ],
+              "style": {
+                "background": "linear-gradient(45deg, rgb(82, 102, 126) 0%, rgb(175, 173, 168) 100%)",
+                "min-height": "80vh",
+                "_valign": "middle"
+              }
+            }
+          },
+          {
+            "token": {
+              "cols": 2
+            },
+            "node": {
+              "kind": "raw",
+              "html": "<div id=\"page-block-1-item-1\" class=\"blocks0\"><div class=\"blockcontainer blocks0container\" style=\"padding: 0px;\"><div class=\"block-content\"></div></div></div>"
+            }
+          }
+        ]
+      }
+    },
+    "2": {
+      "style": {
+        "text-align": "center",
+        "vertical-align": "middle",
+        "_max-content-width": "none",
+        "background-color": "#fff",
+        "_contentPadding": "0px"
+      },
+      "tree": {
+        "kind": "row",
+        "cells": [
+          {
+            "token": {
+              "cols": 2
+            },
+            "node": {
+              "kind": "stack",
+              "children": [
+                {
+                  "kind": "body",
+                  "html": "The Tower is an iconic asset, offering panoramic views in every direction, unrivaled visibility and notable distinction.<br><br>Located in the heart of the media capital of the world, The Tower is in close proximity to the three largest major studios in the world.",
+                  "role": "text1",
+                  "style": {
+                    "padding": "40px 8% 40px 0px"
+                  }
+                }
+              ],
+              "style": {
+                "_valign": "middle"
+              }
+            }
+          },
+          {
+            "token": {
+              "cols": 2
+            },
+            "node": {
+              "kind": "stack",
+              "children": [
+                {
+                  "kind": "media",
+                  "media": {
+                    "kind": "image",
+                    "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/7c6c1d9e-a06a-42ce-8d53-dbeab04cd353.png",
+                    "alt": "logo.png",
+                    "width": 500,
+                    "aspect": 11.878,
+                    "fit": "contain"
+                  }
+                },
+                {
+                  "kind": "heading",
+                  "level": 3,
+                  "html": "Burbank",
+                  "role": "text5"
+                }
+              ],
+              "style": {
+                "background": "linear-gradient(rgb(175, 173, 168) 0%, rgb(255, 255, 255) 100%)",
+                "padding": "200px 4%",
+                "_valign": "middle"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "3": {
+      "style": {
+        "text-align": "center",
+        "height": "800px",
+        "vertical-align": "middle",
+        "background-color": "#ffffff",
+        "_contentPadding": "120px 4% 120px 4%",
+        "_contentPaddingMobile": "80px 4% 80px 4%",
+        "_max-content-width": "1280px"
+      },
+      "background": {
+        "kind": "image",
+        "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/a83f06e5-2299-44e3-8115-bae4a19bc629.jpg",
+        "alt": "_13A1601-Edit-web.jpg"
+      },
+      "tree": {
+        "kind": "raw",
+        "html": "<div class=\"block-holder\" style=\"position: relative; z-index: 2;\"><div class=\"blockcontainer blocks0container valignmiddle\" style=\"min-height: 800px; height: 1px;\"><div class=\"block-content valignmiddleitem\" style=\"width: 100%;\"></div></div></div>"
+      }
+    },
+    "4": {
+      "style": {
+        "_contentPadding": "120px 4% 120px 4%",
+        "_contentPaddingMobile": "80px 4% 80px 4%",
+        "_max-content-width": "1280px"
+      },
+      "tree": {
+        "kind": "stack",
+        "children": [
+          {
+            "kind": "row",
+            "cells": [
+              {
+                "token": {
+                  "cols": 2
+                },
+                "node": {
+                  "kind": "subtitle",
+                  "text": "Creative.\nModern.\nInnovative",
+                  "role": "text2",
+                  "style": {
+                    "padding": "20px 0px 0px"
+                  }
+                }
+              },
+              {
+                "token": {
+                  "cols": 2
+                },
+                "node": {
+                  "kind": "row",
+                  "cells": [
+                    {
+                      "token": {
+                        "cols": 3
+                      },
+                      "node": {
+                        "kind": "stack",
+                        "children": [
+                          {
+                            "kind": "media",
+                            "media": {
+                              "kind": "image",
+                              "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/11c5ff49-17f1-4bbc-a60e-47cb7f3dd8f7.png",
+                              "alt": "amenities-gym.png",
+                              "width": 125,
+                              "aspect": 99.77,
+                              "fit": "contain"
+                            }
+                          },
+                          {
+                            "kind": "heading",
+                            "level": 5,
+                            "html": "On-site Gym",
+                            "role": "text5"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 3
+                      },
+                      "node": {
+                        "kind": "stack",
+                        "children": [
+                          {
+                            "kind": "media",
+                            "media": {
+                              "kind": "image",
+                              "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/e5aedea2-3c7f-41fe-b010-bd8360782e33.png",
+                              "alt": "amenities-coffee.png",
+                              "width": 125,
+                              "aspect": 99.77,
+                              "fit": "contain"
+                            }
+                          },
+                          {
+                            "kind": "heading",
+                            "level": 5,
+                            "html": "Coffee bar",
+                            "role": "text5"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 3
+                      },
+                      "node": {
+                        "kind": "stack",
+                        "children": [
+                          {
+                            "kind": "media",
+                            "media": {
+                              "kind": "image",
+                              "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/d2091c5d-9dae-42e6-a0c7-f4fc84ece573.png",
+                              "alt": "amenities-recreation.png",
+                              "width": 125,
+                              "aspect": 99.77,
+                              "fit": "contain"
+                            }
+                          },
+                          {
+                            "kind": "heading",
+                            "level": 5,
+                            "html": "recreation",
+                            "role": "text5"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 3
+                      },
+                      "node": {
+                        "kind": "stack",
+                        "children": [
+                          {
+                            "kind": "media",
+                            "media": {
+                              "kind": "image",
+                              "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/b1de3d93-6fc9-47a1-8b1a-8e12bcbc029c.png",
+                              "alt": "amenities-valet.png",
+                              "width": 125,
+                              "aspect": 99.77,
+                              "fit": "contain"
+                            }
+                          },
+                          {
+                            "kind": "heading",
+                            "level": 5,
+                            "html": "valet service",
+                            "role": "text5"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 3
+                      },
+                      "node": {
+                        "kind": "stack",
+                        "children": [
+                          {
+                            "kind": "media",
+                            "media": {
+                              "kind": "image",
+                              "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/70f39fe8-99b2-45c2-822a-94ad038ab279.png",
+                              "alt": "amenities-EV.png",
+                              "width": 125,
+                              "aspect": 99.77,
+                              "fit": "contain"
+                            }
+                          },
+                          {
+                            "kind": "heading",
+                            "level": 5,
+                            "html": "EV Charging",
+                            "role": "text5"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "style": {
+                    "background-color": "rgb(255, 255, 255)"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "kind": "row",
+            "cells": [
+              {
+                "token": {
+                  "cols": 1
+                },
+                "node": {
+                  "kind": "row",
+                  "cells": [
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/58d53ac4-c37e-4d6f-9e95-0d75ecfb01ae.jpg",
+                          "alt": "tower-web-1.jpg",
+                          "width": 1920,
+                          "aspect": 66.667,
+                          "fit": "cover"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "stack",
+                        "children": [
+                          {
+                            "kind": "media",
+                            "media": {
+                              "kind": "image",
+                              "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/1a069c16-b6f2-48a7-9c9d-233438d8187c.png",
+                              "alt": "line-black.png",
+                              "width": 50,
+                              "aspect": 18.978,
+                              "fit": "contain"
+                            }
+                          },
+                          {
+                            "kind": "body",
+                            "html": "Renew and recover with exclusive access to a state-of-the-art FIT Health Club with full-service locker rooms in a spa-like atmosphere. Balance your work with private training or group classes like yoga, Pilates and spin. <br>",
+                            "role": "text1",
+                            "style": {
+                              "padding": "20px 8% 0px 0px"
+                            }
+                          }
+                        ],
+                        "style": {
+                          "background-color": "rgb(255, 255, 255)",
+                          "padding": "40px 8%",
+                          "_fill": "column"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "token": {
+                  "cols": 1
+                },
+                "node": {
+                  "kind": "row",
+                  "cells": [
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/f2c7f8e0-28cf-4b2b-9a3c-0cf916808565.jpg",
+                          "alt": "_CWF7965-1.jpg",
+                          "width": 920,
+                          "aspect": 66.739,
+                          "fit": "cover"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "stack",
+                        "children": [
+                          {
+                            "kind": "media",
+                            "media": {
+                              "kind": "image",
+                              "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/1a069c16-b6f2-48a7-9c9d-233438d8187c.png",
+                              "alt": "line-black.png",
+                              "width": 50,
+                              "aspect": 18.978,
+                              "fit": "contain"
+                            }
+                          },
+                          {
+                            "kind": "body",
+                            "html": "Energize your morning with delectable offerings from Olive &amp; Thyme downstairs, or choose from dozens of restaurants and retail steps away on Riverside Drive, around the Media District and into Toluca Lake.",
+                            "role": "text1",
+                            "style": {
+                              "padding": "20px 8% 0px 0px"
+                            }
+                          }
+                        ],
+                        "style": {
+                          "background-color": "rgb(255, 255, 255)",
+                          "padding": "40px 8%",
+                          "_fill": "column"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "token": {
+                  "cols": 1
+                },
+                "node": {
+                  "kind": "row",
+                  "cells": [
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/60064498-e3be-4eba-9df2-60c62935751e.jpg",
+                          "alt": "tower-web-8.jpg",
+                          "width": 1920,
+                          "aspect": 66.771,
+                          "fit": "cover"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "stack",
+                        "children": [
+                          {
+                            "kind": "media",
+                            "media": {
+                              "kind": "image",
+                              "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/1a069c16-b6f2-48a7-9c9d-233438d8187c.png",
+                              "alt": "line-black.png",
+                              "width": 50,
+                              "aspect": 18.978,
+                              "fit": "contain"
+                            }
+                          },
+                          {
+                            "kind": "body",
+                            "html": "Think outside your office walls to get in the game, recharge your creativity and enjoy friendly competition with coworkers.",
+                            "role": "text1",
+                            "style": {
+                              "padding": "20px 8% 0px 0px"
+                            }
+                          }
+                        ],
+                        "style": {
+                          "background-color": "rgb(255, 255, 255)",
+                          "padding": "40px 8%",
+                          "_fill": "column"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "5": {
+      "style": {
+        "text-align": "left",
+        "vertical-align": "middle",
+        "_max-content-width": "none",
+        "_contentPadding": "0px"
+      },
+      "split": {
+        "mediaSide": "left",
+        "ratio": 50,
+        "media": {
+          "kind": "image",
+          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/11f9e0a1-f22b-4237-857d-a71993a659d8.jpg",
+          "alt": "tower-web-6.jpg",
+          "fit": "cover",
+          "minHeight": "90vh"
+        },
+        "text": {
+          "kind": "stack",
+          "children": [
+            {
+              "kind": "heading",
+              "level": 3,
+              "html": "bold<br>and<br>beautiful",
+              "role": "text2",
+              "style": {
+                "color": "rgb(255, 255, 255)"
+              }
+            }
+          ],
+          "style": {
+            "padding": "80px 12%",
+            "background": "linear-gradient(45deg, rgb(82, 102, 126) 0%, rgb(173, 171, 166) 100%)",
+            "_fill": "column"
+          }
+        }
+      }
+    },
+    "7": {
+      "style": {
+        "text-align": "center",
+        "vertical-align": "middle",
+        "_max-content-width": "none",
+        "background-color": "#ffffff",
+        "_contentPadding": "0px"
+      },
+      "tree": {
+        "kind": "row",
+        "cells": [
+          {
+            "token": {
+              "cols": 2
+            },
+            "node": {
+              "kind": "stack",
+              "children": [
+                {
+                  "kind": "stack",
+                  "children": [
+                    {
+                      "kind": "stack",
+                      "children": [
+                        {
+                          "kind": "heading",
+                          "level": 4,
+                          "html": "A One-of-a-Kind Opportunity",
+                          "role": "text11",
+                          "style": {
+                            "padding": "20px 0px 30px",
+                            "color": "rgb(30, 60, 82)"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "_valign": "middle"
+                      }
+                    },
+                    {
+                      "kind": "stack",
+                      "children": [
+                        {
+                          "kind": "media",
+                          "media": {
+                            "kind": "image",
+                            "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/1a069c16-b6f2-48a7-9c9d-233438d8187c.png",
+                            "alt": "line-black.png",
+                            "width": 50,
+                            "aspect": 18.978,
+                            "fit": "contain"
+                          }
+                        }
+                      ],
+                      "style": {
+                        "_valign": "middle"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "row",
+                  "cells": [
+                    {
+                      "token": {
+                        "cols": 1,
+                        "spacing": 40
+                      },
+                      "node": {
+                        "kind": "row",
+                        "cells": [
+                          {
+                            "token": {
+                              "cols": 2,
+                              "ratio": 20
+                            },
+                            "node": {
+                              "kind": "media",
+                              "media": {
+                                "kind": "image",
+                                "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/a5789808-55d3-4aec-bdaa-9220abe93265.png",
+                                "alt": "outline.png",
+                                "width": 120,
+                                "aspect": 124.047,
+                                "fit": "contain"
+                              }
+                            }
+                          },
+                          {
+                            "token": {
+                              "cols": 2,
+                              "ratio": 80
+                            },
+                            "node": {
+                              "kind": "heading",
+                              "level": 5,
+                              "html": " Signage Opportunity",
+                              "role": "text5"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 1,
+                        "spacing": 40
+                      },
+                      "node": {
+                        "kind": "row",
+                        "cells": [
+                          {
+                            "token": {
+                              "cols": 2,
+                              "ratio": 20
+                            },
+                            "node": {
+                              "kind": "media",
+                              "media": {
+                                "kind": "image",
+                                "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/deb9a7d6-5da3-4789-bb82-91c6e2d5e7a0.png",
+                                "alt": "floors.png",
+                                "width": 120,
+                                "aspect": 124.047,
+                                "fit": "contain"
+                              }
+                            }
+                          },
+                          {
+                            "token": {
+                              "cols": 2,
+                              "ratio": 80
+                            },
+                            "node": {
+                              "kind": "heading",
+                              "level": 5,
+                              "html": "32 floors of panoramic views",
+                              "role": "text5"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 1,
+                        "spacing": 40
+                      },
+                      "node": {
+                        "kind": "row",
+                        "cells": [
+                          {
+                            "token": {
+                              "cols": 2,
+                              "ratio": 20
+                            },
+                            "node": {
+                              "kind": "media",
+                              "media": {
+                                "kind": "image",
+                                "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/f3492871-73dd-4f6a-be57-81b57d369ab8.png",
+                                "alt": "square footage.png",
+                                "width": 120,
+                                "aspect": 124.047,
+                                "fit": "contain"
+                              }
+                            }
+                          },
+                          {
+                            "token": {
+                              "cols": 2,
+                              "ratio": 80
+                            },
+                            "node": {
+                              "kind": "heading",
+                              "level": 5,
+                              "html": "490,000 SF OF SOPHISTICATED,<br>MODERN WORKPLACE",
+                              "role": "text5"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 1,
+                        "spacing": 40
+                      },
+                      "node": {
+                        "kind": "row",
+                        "cells": [
+                          {
+                            "token": {
+                              "cols": 2,
+                              "ratio": 20
+                            },
+                            "node": {
+                              "kind": "media",
+                              "media": {
+                                "kind": "image",
+                                "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/9d9c88d3-4d3e-4b71-aacc-c545baaca8bb.png",
+                                "alt": "leed gold.png",
+                                "width": 120,
+                                "aspect": 100,
+                                "fit": "contain"
+                              }
+                            }
+                          },
+                          {
+                            "token": {
+                              "cols": 2,
+                              "ratio": 80
+                            },
+                            "node": {
+                              "kind": "heading",
+                              "level": 5,
+                              "html": "LEED GOLD CERTIFIED",
+                              "role": "text5"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "style": {
+                    "padding": "80px 0px 0px"
+                  }
+                }
+              ],
+              "style": {
+                "background": "linear-gradient(rgb(255, 255, 255) 40%, rgb(175, 173, 168) 100%)",
+                "padding": "80px 12%",
+                "_fill": "column"
+              }
+            }
+          },
+          {
+            "token": {
+              "cols": 2
+            },
+            "node": {
+              "kind": "stack",
+              "children": [
+                {
+                  "kind": "media",
+                  "media": {
+                    "kind": "image",
+                    "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/503ecf5b-aedf-4788-a3cd-8a04d70e124e.png",
+                    "alt": "Tower-alt.png",
+                    "width": 1952,
+                    "aspect": 125.512,
+                    "fit": "contain"
+                  }
+                },
+                {
+                  "kind": "stack",
+                  "children": [
+                    {
+                      "kind": "media",
+                      "media": {
+                        "kind": "image",
+                        "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/8a13d429-7d69-4b22-badf-3397e04c3747.png",
+                        "alt": "Tower-Info.png",
+                        "width": 1645,
+                        "aspect": 34.103,
+                        "fit": "contain"
+                      }
+                    }
+                  ],
+                  "style": {
+                    "padding": "0px 4%",
+                    "_valign": "middle"
+                  }
+                }
+              ],
+              "style": {
+                "padding": "0px 0px 40px"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "8": {
+      "style": {
+        "vertical-align": "middle",
+        "_contentPadding": "200px 4% 200px 4%",
+        "text-align": "center",
+        "_max-content-width": "920px"
+      },
+      "tree": {
+        "kind": "stack",
+        "children": [
+          {
+            "kind": "heading",
+            "level": 2,
+            "html": "Be part of the community among the biggest names in entertainment.",
+            "role": "text6",
+            "style": {
+              "color": "rgb(255, 255, 255)"
+            }
+          },
+          {
+            "kind": "media",
+            "media": {
+              "kind": "image",
+              "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/9a8bd2ff-376f-4421-8a50-58939953da97.png",
+              "alt": "line-white.png",
+              "width": 50,
+              "aspect": 22.024,
+              "fit": "contain"
+            }
+          }
+        ]
+      }
+    },
+    "9": {
+      "style": {
+        "_contentPadding": "120px 4% 120px 4%",
+        "_contentPaddingMobile": "80px 4% 80px 4%",
+        "_max-content-width": "1280px"
+      },
+      "tree": {
+        "kind": "stack",
+        "children": [
+          {
+            "kind": "stack",
+            "children": [
+              {
+                "kind": "stack",
+                "children": [
+                  {
+                    "kind": "heading",
+                    "level": 4,
+                    "html": "a property within",
+                    "role": "text11",
+                    "style": {
+                      "padding": "0px 0px 30px"
+                    }
+                  },
+                  {
+                    "kind": "media",
+                    "media": {
+                      "kind": "image",
+                      "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/b640649d-05cf-40c1-9edc-f3fc9d427c76.png",
+                      "alt": "TBP-Logo-Outline.png",
+                      "width": 700,
+                      "aspect": 6.124,
+                      "fit": "contain"
+                    }
+                  }
+                ]
+              },
+              {
+                "kind": "stack",
+                "children": [
+                  {
+                    "kind": "media",
+                    "media": {
+                      "kind": "image",
+                      "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/1a069c16-b6f2-48a7-9c9d-233438d8187c.png",
+                      "alt": "line-black.png",
+                      "width": 50,
+                      "aspect": 18.978,
+                      "fit": "contain"
+                    }
+                  }
+                ],
+                "style": {
+                  "padding": "40px 0px 0px"
+                }
+              }
+            ],
+            "style": {
+              "padding": "0px 0px 80px"
+            }
+          },
+          {
+            "kind": "media",
+            "media": {
+              "kind": "video",
+              "url": "https://dv4tl7yyk1zlp.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/1ad16022-dd5f-468c-98b0-4fe7950d1ef5.mp4",
+              "alt": "TBP_vid.mp4",
+              "aspect": 56.25,
+              "playback": {
+                "controls": true,
+                "playsinline": true
+              }
+            }
+          },
+          {
+            "kind": "row",
+            "cells": [
+              {
+                "token": {
+                  "cols": 2
+                },
+                "node": {
+                  "kind": "body",
+                  "html": "A collection of 13 buildings offering premier office space among the biggest names in entertainment. Explore 3,200,000 SF of endless possibilities.",
+                  "role": "text1",
+                  "style": {
+                    "padding": "0px 10% 40px 0px"
+                  }
+                }
+              },
+              {
+                "token": {
+                  "cols": 2
+                },
+                "node": {
+                  "kind": "stack",
+                  "children": [
+                    {
+                      "kind": "heading",
+                      "level": 4,
+                      "html": "presented by",
+                      "role": "text5"
+                    },
+                    {
+                      "kind": "row",
+                      "cells": [
+                        {
+                          "token": {
+                            "cols": "any"
+                          },
+                          "node": {
+                            "kind": "stack",
+                            "children": [
+                              {
+                                "kind": "media",
+                                "media": {
+                                  "kind": "image",
+                                  "url": "https://d3syaxnfm3oj0e.cloudfront.net/9f707371-2399-4950-9293-acb43a97f118/cfc17af2-ff1f-40a4-a5bf-4123cd5f355c.png",
+                                  "alt": "worthe.png",
+                                  "width": 140,
+                                  "aspect": 26.009,
+                                  "fit": "contain"
+                                }
+                              }
+                            ],
+                            "style": {
+                              "padding": "10px 40px 0px 0px"
+                            }
+                          }
+                        },
+                        {
+                          "token": {
+                            "cols": "any"
+                          },
+                          "node": {
+                            "kind": "stack",
+                            "children": [
+                              {
+                                "kind": "media",
+                                "media": {
+                                  "kind": "image",
+                                  "url": "https://d3syaxnfm3oj0e.cloudfront.net/9f707371-2399-4950-9293-acb43a97f118/966adedb-0315-4afd-b070-8c89f8792267.png",
+                                  "alt": "Blackstone.png",
+                                  "width": 160,
+                                  "aspect": 39.576,
+                                  "fit": "contain"
+                                }
+                              }
+                            ],
+                            "style": {
+                              "padding": "10px 40px 0px 0px"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ],
+            "style": {
+              "padding": "20px 0px 0px"
+            }
+          },
+          {
+            "kind": "stack",
+            "children": [
+              {
+                "kind": "heading",
+                "level": 3,
+                "html": "local amenities",
+                "role": "text11",
+                "style": {
+                  "padding": "20px 0px 30px"
+                }
+              },
+              {
+                "kind": "media",
+                "media": {
+                  "kind": "image",
+                  "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/1a069c16-b6f2-48a7-9c9d-233438d8187c.png",
+                  "alt": "line-black.png",
+                  "width": 50,
+                  "aspect": 18.978,
+                  "fit": "contain"
+                }
+              },
+              {
+                "kind": "row",
+                "cells": [
+                  {
+                    "token": {
+                      "cols": 2
+                    },
+                    "node": {
+                      "kind": "stack",
+                      "children": [
+                        {
+                          "kind": "heading",
+                          "level": 4,
+                          "html": "A city full of possibilities",
+                          "role": "text0",
+                          "style": {
+                            "padding": "20px 0px 0px"
+                          }
+                        },
+                        {
+                          "kind": "body",
+                          "html": "Burbank offers a wide range of opportunities from its network of world-renowned studios, accessible airport, and recreational activities.",
+                          "role": "text1",
+                          "style": {
+                            "padding": "20px 0px 0px"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "token": {
+                      "cols": 2
+                    },
+                    "node": {
+                      "kind": "raw",
+                      "html": "<div id=\"page-block-9-item-3-item-1\" class=\"blocks0\"><div class=\"blockcontainer blocks0container\"><div class=\"block-content\"></div></div></div>"
+                    }
+                  }
+                ]
+              }
+            ],
+            "style": {
+              "padding": "100px 0px 40px"
+            }
+          },
+          {
+            "kind": "row",
+            "cells": [
+              {
+                "token": {
+                  "cols": 1,
+                  "spacing": 50
+                },
+                "node": {
+                  "kind": "row",
+                  "cells": [
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/1b813e48-72a6-4b86-b270-9703389f493b.jpg",
+                          "alt": "TBP_Studio_img_Getty_200417679-web.jpg",
+                          "width": 1078,
+                          "aspect": 75.232,
+                          "fit": "contain"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "stack",
+                        "children": [
+                          {
+                            "kind": "media",
+                            "media": {
+                              "kind": "image",
+                              "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/1a069c16-b6f2-48a7-9c9d-233438d8187c.png",
+                              "alt": "line-black.png",
+                              "width": 50,
+                              "aspect": 18.978,
+                              "fit": "contain"
+                            }
+                          },
+                          {
+                            "kind": "heading",
+                            "level": 5,
+                            "html": "Be part of the community among the biggest names in entertainment.",
+                            "role": "text9",
+                            "style": {
+                              "padding": "20px 4% 100px 0px"
+                            }
+                          }
+                        ],
+                        "style": {
+                          "background-color": "rgb(255, 255, 255)",
+                          "padding": "40px 8%",
+                          "_fill": "column"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "token": {
+                  "cols": 1,
+                  "spacing": 50
+                },
+                "node": {
+                  "kind": "row",
+                  "cells": [
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/fe158433-701e-4188-96d8-30adb77afa95.jpg",
+                          "alt": "eva-darron-oCdVtGFeDC0-unsplash.jpg",
+                          "width": 5774,
+                          "aspect": 56.269,
+                          "fit": "cover"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "stack",
+                        "children": [
+                          {
+                            "kind": "media",
+                            "media": {
+                              "kind": "image",
+                              "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/1a069c16-b6f2-48a7-9c9d-233438d8187c.png",
+                              "alt": "line-black.png",
+                              "width": 50,
+                              "aspect": 18.978,
+                              "fit": "contain"
+                            }
+                          },
+                          {
+                            "kind": "heading",
+                            "level": 5,
+                            "html": "Fly, surf, ski, all within an hour away. Plus every business partner is around the corner.",
+                            "role": "text9",
+                            "style": {
+                              "padding": "20px 0px 100px"
+                            }
+                          }
+                        ],
+                        "style": {
+                          "background-color": "rgb(255, 255, 255)",
+                          "padding": "40px 8%",
+                          "_fill": "column"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "token": {
+                  "cols": 1,
+                  "spacing": 50
+                },
+                "node": {
+                  "kind": "row",
+                  "cells": [
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "row",
+                        "cells": [
+                          {
+                            "token": {
+                              "cols": 1
+                            },
+                            "node": {
+                              "kind": "media",
+                              "media": {
+                                "kind": "image",
+                                "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/e835c477-e407-49a3-abab-a5f7f89a0030.jpg",
+                                "alt": "TBP_Burbank_women_coffee-web.jpg",
+                                "width": 1080,
+                                "aspect": 66.667,
+                                "fit": "contain"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "stack",
+                        "children": [
+                          {
+                            "kind": "media",
+                            "media": {
+                              "kind": "image",
+                              "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/1a069c16-b6f2-48a7-9c9d-233438d8187c.png",
+                              "alt": "line-black.png",
+                              "width": 50,
+                              "aspect": 18.978,
+                              "fit": "contain"
+                            }
+                          },
+                          {
+                            "kind": "heading",
+                            "level": 5,
+                            "html": "Day or night, Burbank delights with vibrant energy and one-of-a-kind character.",
+                            "role": "text9",
+                            "style": {
+                              "padding": "20px 0px 100px"
+                            }
+                          }
+                        ],
+                        "style": {
+                          "background-color": "rgb(255, 255, 255)",
+                          "padding": "40px 8%",
+                          "_fill": "column"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "10": {
+      "style": {
+        "text-align": "center",
+        "height": "400px",
+        "_contentPadding": "150px 10% 0 10%",
+        "_max-content-width": "1280px"
+      },
+      "tree": {
+        "kind": "stack",
+        "children": [
+          {
+            "kind": "media",
+            "media": {
+              "kind": "image",
+              "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/1a069c16-b6f2-48a7-9c9d-233438d8187c.png",
+              "alt": "line-black.png",
+              "width": 50,
+              "aspect": 18.978,
+              "fit": "contain"
+            }
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "html": "EVERYTHING WITHIN REACH",
+            "role": "text0",
+            "style": {
+              "padding": "20px 0px 0px"
+            }
+          }
+        ]
+      }
+    },
+    "11": {
+      "style": {
+        "background-color": "#ffffff",
+        "_contentPadding": "0 4% 80px 4%",
+        "_max-content-width": "1280px"
+      },
+      "map": {
+        "mid": "1KwcmcCf1kd-8jN7lLt36kQ9lFjLab0bz",
+        "layers": [
+          {
+            "name": "Hotels",
+            "lid": "8rJ0fKhImbs",
+            "initiallyVisible": false,
+            "preserveViewport": true
+          },
+          {
+            "name": "Food_And_Drink",
+            "lid": "dqcWdasb9-8",
+            "initiallyVisible": false,
+            "preserveViewport": true
+          },
+          {
+            "name": "Retail",
+            "lid": "58NHVxQwLlc",
+            "initiallyVisible": false,
+            "preserveViewport": true
+          },
+          {
+            "name": "Services",
+            "lid": "Sv_E02Q8vjc",
+            "initiallyVisible": false,
+            "preserveViewport": true
+          },
+          {
+            "name": "Entertainment",
+            "lid": "5Exqy6xPvW4",
+            "initiallyVisible": false,
+            "preserveViewport": true
+          },
+          {
+            "name": "Office_Tenants",
+            "lid": "Xf3l8pFzy4s",
+            "initiallyVisible": false,
+            "preserveViewport": true
+          },
+          {
+            "name": "Studios",
+            "lid": "avheVKZTvpo",
+            "initiallyVisible": false,
+            "preserveViewport": true
+          },
+          {
+            "name": "The_Burbank_Portfolio",
+            "lid": "lq--xeECBoM",
+            "initiallyVisible": true,
+            "preserveViewport": false
+          }
+        ],
+        "toggles": [
+          {
+            "label": "The Burbank Portfolio",
+            "layers": ["The_Burbank_Portfolio"],
+            "panelIndex": 0
+          },
+          {
+            "label": "Studio And Offices",
+            "layers": ["Studios", "Office_Tenants"],
+            "panelIndex": 1
+          },
+          {
+            "label": "Retail And Dining",
+            "layers": ["Food_And_Drink", "Retail", "Entertainment"],
+            "panelIndex": 2
+          },
+          {
+            "label": "Hotel And Services",
+            "layers": ["Hotels", "Services"],
+            "panelIndex": 3
+          }
+        ],
+        "styles": [
+          {
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#f5f5f5"
+              },
+              {
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "elementType": "geometry.fill",
+            "stylers": [
+              {
+                "weight": 1.5
+              }
+            ]
+          },
+          {
+            "elementType": "geometry.stroke",
+            "stylers": [
+              {
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "elementType": "labels.icon",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#616161"
+              },
+              {
+                "weight": 1.5
+              }
+            ]
+          },
+          {
+            "elementType": "labels.text.stroke",
+            "stylers": [
+              {
+                "color": "#f5f5f5"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "administrative.land_parcel",
+            "elementType": "labels",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              },
+              {
+                "visibility": "off"
+              },
+              {
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "featureType": "administrative.land_parcel",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#bdbdbd"
+              },
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#eeeeee"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "labels.text",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#757575"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#e5e5e5"
+              }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#ffffff"
+              }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "labels.icon",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "road.arterial",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#757575"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#dadada"
+              }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#616161"
+              }
+            ]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "labels",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "road.local",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          },
+          {
+            "featureType": "transit",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          },
+          {
+            "featureType": "transit.line",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#e5e5e5"
+              }
+            ]
+          },
+          {
+            "featureType": "transit.station",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#eeeeee"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "color": "#c9c9c9"
+              }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "color": "#9e9e9e"
+              }
+            ]
+          }
+        ],
+        "center": {
+          "lat": -34.397,
+          "lng": 150.644
+        },
+        "zoom": 8,
+        "height": "600px",
+        "defaultToggle": 0
+      },
+      "tree": {
+        "kind": "stack",
+        "children": [
+          {
+            "kind": "widget",
+            "widget": {
+              "type": "map"
+            }
+          },
+          {
+            "kind": "row",
+            "cells": [
+              {
+                "token": {
+                  "cols": 1
+                },
+                "node": {
+                  "kind": "row",
+                  "cells": [
+                    {
+                      "token": {
+                        "cols": 4
+                      },
+                      "node": {
+                        "kind": "stack",
+                        "children": [
+                          {
+                            "kind": "heading",
+                            "level": 4,
+                            "html": "The Pointe",
+                            "role": "text5"
+                          },
+                          {
+                            "kind": "body",
+                            "html": "2900 West Alameda Ave<br>Burbank, CA 91505",
+                            "role": "text8"
+                          },
+                          {
+                            "kind": "raw",
+                            "html": "<a href=\"http://www.thepointeburbank.com/\" target=\"_blank\" class=\"links\">Visit Website</a>"
+                          }
+                        ],
+                        "style": {
+                          "padding": "20px 4%"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 4
+                      },
+                      "node": {
+                        "kind": "stack",
+                        "children": [
+                          {
+                            "kind": "heading",
+                            "level": 4,
+                            "html": "The Tower",
+                            "role": "text5"
+                          },
+                          {
+                            "kind": "body",
+                            "html": "3900 West Alameda Ave<br>Burbank, CA 91505",
+                            "role": "text8"
+                          },
+                          {
+                            "kind": "raw",
+                            "html": "<a href=\"http://www.thetowerburbank.com/\" target=\"_blank\" class=\"links\">Visit Website</a>"
+                          }
+                        ],
+                        "style": {
+                          "padding": "20px 4%"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 4
+                      },
+                      "node": {
+                        "kind": "stack",
+                        "children": [
+                          {
+                            "kind": "heading",
+                            "level": 4,
+                            "html": "The Pinnacle I",
+                            "role": "text5"
+                          },
+                          {
+                            "kind": "body",
+                            "html": "3400 West Olive Ave<br>Burbank, CA 91505",
+                            "role": "text8"
+                          },
+                          {
+                            "kind": "raw",
+                            "html": "<a href=\"https://www.thepinnacleburbank.com/\" target=\"_blank\" class=\"links\">Visit Website</a>"
+                          }
+                        ],
+                        "style": {
+                          "padding": "20px 4%"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 4
+                      },
+                      "node": {
+                        "kind": "stack",
+                        "children": [
+                          {
+                            "kind": "heading",
+                            "level": 4,
+                            "html": "The Pinnacle II",
+                            "role": "text5"
+                          },
+                          {
+                            "kind": "body",
+                            "html": "3300 West Olive Ave<br>Burbank, CA 91505",
+                            "role": "text8"
+                          },
+                          {
+                            "kind": "raw",
+                            "html": "<a href=\"https://www.thepinnacleburbank.com/\" target=\"_blank\" class=\"links\">Visit Website</a>"
+                          }
+                        ],
+                        "style": {
+                          "padding": "20px 4%"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 4
+                      },
+                      "node": {
+                        "kind": "stack",
+                        "children": [
+                          {
+                            "kind": "heading",
+                            "level": 4,
+                            "html": "3800 Alameda",
+                            "role": "text5"
+                          },
+                          {
+                            "kind": "body",
+                            "html": "3800 Alameda Ave<br>Burbank, CA 91505",
+                            "role": "text8"
+                          },
+                          {
+                            "kind": "raw",
+                            "html": "<a href=\"https://www.theburbankportfolio.com/3800-alameda\" target=\"_blank\" class=\"links\">Visit Website</a>"
+                          }
+                        ],
+                        "style": {
+                          "padding": "20px 4%"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 4
+                      },
+                      "node": {
+                        "kind": "stack",
+                        "children": [
+                          {
+                            "kind": "heading",
+                            "level": 4,
+                            "html": "Media Studios",
+                            "role": "text5"
+                          },
+                          {
+                            "kind": "body",
+                            "html": "3100 Thornton Ave<br>2255 &amp; 2233 Ontario Ave<br>3333 &amp; 3355 Empire Ave<br>Burbank, CA 91504",
+                            "role": "text8"
+                          },
+                          {
+                            "kind": "raw",
+                            "html": "<a href=\"https://www.mediastudiosburbank.com/\" target=\"_blank\" class=\"links\">Visit Website</a>"
+                          }
+                        ],
+                        "style": {
+                          "padding": "20px 4%"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 4
+                      },
+                      "node": {
+                        "kind": "stack",
+                        "children": [
+                          {
+                            "kind": "heading",
+                            "level": 4,
+                            "html": "Central Park",
+                            "role": "text5"
+                          },
+                          {
+                            "kind": "body",
+                            "html": "3500 West Olive Ave<br>Burbank, CA 91505",
+                            "role": "text8"
+                          },
+                          {
+                            "kind": "raw",
+                            "html": "<a href=\"https://www.theburbankportfolio.com/central-park\" target=\"_blank\" class=\"links\">Visit Website</a>"
+                          }
+                        ],
+                        "style": {
+                          "padding": "20px 4%"
+                        }
+                      }
+                    }
+                  ],
+                  "style": {
+                    "padding": "20px 0px"
+                  }
+                }
+              },
+              {
+                "token": {
+                  "cols": 1
+                },
+                "node": {
+                  "kind": "row",
+                  "cells": [
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/f7610bf0-7a0b-4acb-92cc-62e70aa1cbd6.png",
+                          "alt": "tenant-1.png",
+                          "width": 1701,
+                          "aspect": 23.692,
+                          "fit": "contain"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/9394dbac-0e53-4bbc-86f8-e785ac6dac2f.png",
+                          "alt": "tenant-2.png",
+                          "width": 1701,
+                          "aspect": 23.692,
+                          "fit": "contain"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/6e0eb465-5aec-4e21-bb76-49c27290cb67.png",
+                          "alt": "tenant-3.png",
+                          "width": 851,
+                          "aspect": 23.737,
+                          "fit": "contain"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/58eda9d7-896e-46db-8163-5d23344e197b.png",
+                          "alt": "tenant-4.png",
+                          "width": 1701,
+                          "aspect": 23.692,
+                          "fit": "contain"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/7aff4235-fca2-40ef-957b-420ae346a2fe.png",
+                          "alt": "tenant-5.png",
+                          "width": 852,
+                          "aspect": 23.709,
+                          "fit": "contain"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/936d9516-daea-4385-83c0-391b7452c1e0.png",
+                          "alt": "tenant-6.png",
+                          "width": 1702,
+                          "aspect": 23.678,
+                          "fit": "contain"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/6dffb189-d166-45b6-a0e4-f12846b9d9ca.png",
+                          "alt": "tenant-7.png",
+                          "width": 1702,
+                          "aspect": 23.678,
+                          "fit": "contain"
+                        }
+                      }
+                    }
+                  ],
+                  "style": {
+                    "padding": "20px 0px"
+                  }
+                }
+              },
+              {
+                "token": {
+                  "cols": 1
+                },
+                "node": {
+                  "kind": "row",
+                  "cells": [
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/b2e2f6ab-7a5a-4098-bb04-18f71ef2cb2b.png",
+                          "alt": "Dining-1.png",
+                          "width": 851,
+                          "aspect": 23.737,
+                          "fit": "contain"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/02a86425-716f-48f6-8bdf-2ae7db92c9e8.png",
+                          "alt": "Dining-2.png",
+                          "width": 1702,
+                          "aspect": 23.678,
+                          "fit": "contain"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/78d05537-d417-49b8-a3fd-ddeadf7a6de3.png",
+                          "alt": "Dining-3.png",
+                          "width": 851,
+                          "aspect": 23.737,
+                          "fit": "contain"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/1d0e71fb-f44a-42a0-9370-b41688391add.png",
+                          "alt": "Dining-4.png",
+                          "width": 852,
+                          "aspect": 23.709,
+                          "fit": "contain"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/4a2023fc-bbbe-44a1-a358-cd3bd38538b0.png",
+                          "alt": "Dining-5.png",
+                          "width": 851,
+                          "aspect": 23.737,
+                          "fit": "contain"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/35d76fac-3bbb-44c8-a50a-f3022011d43a.png",
+                          "alt": "Dining-6.png",
+                          "width": 852,
+                          "aspect": 23.709,
+                          "fit": "contain"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/63baeb6f-23b3-46d4-9776-cadc993ab416.png",
+                          "alt": "Dining-7.png",
+                          "width": 1701,
+                          "aspect": 23.692,
+                          "fit": "contain"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/36096476-af60-4a37-b9d1-66eccd420ac4.png",
+                          "alt": "Dining-8.png",
+                          "width": 1702,
+                          "aspect": 23.678,
+                          "fit": "contain"
+                        }
+                      }
+                    }
+                  ],
+                  "style": {
+                    "padding": "20px 0px"
+                  }
+                }
+              },
+              {
+                "token": {
+                  "cols": 1
+                },
+                "node": {
+                  "kind": "row",
+                  "cells": [
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/2452b207-c6ad-476c-a0b0-0d4257ec9856.png",
+                          "alt": "service-1.png",
+                          "width": 851,
+                          "aspect": 23.737,
+                          "fit": "contain"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/1d1dd41c-0826-4e98-a3e0-c6cda1488bc2.png",
+                          "alt": "service-2.png",
+                          "width": 1702,
+                          "aspect": 23.678,
+                          "fit": "contain"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/0d80831b-0877-4100-9489-6947e07b37c4.png",
+                          "alt": "service-3.png",
+                          "width": 851,
+                          "aspect": 23.737,
+                          "fit": "contain"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/0baac63f-4827-4df5-91cd-165e330d9e8f.png",
+                          "alt": "service-4.png",
+                          "width": 1702,
+                          "aspect": 23.678,
+                          "fit": "contain"
+                        }
+                      }
+                    },
+                    {
+                      "token": {
+                        "cols": 2
+                      },
+                      "node": {
+                        "kind": "media",
+                        "media": {
+                          "kind": "image",
+                          "url": "https://d3syaxnfm3oj0e.cloudfront.net/26c9ecb9-bc35-4562-8155-fadfee8df2b2/157cf22c-3410-4c48-8210-7102122c6846.png",
+                          "alt": "service-5.png",
+                          "width": 851,
+                          "aspect": 23.737,
+                          "fit": "contain"
+                        }
+                      }
+                    }
+                  ],
+                  "style": {
+                    "padding": "20px 0px"
+                  }
+                }
+              }
+            ],
+            "panels": true
+          }
+        ]
+      }
+    },
+    "12": {
+      "style": {
+        "text-align": "center",
+        "height": "600px",
+        "background-color": "#ffffff",
+        "vertical-align": "middle",
+        "_contentPadding": "120px 4% 120px 4%",
+        "_contentPaddingMobile": "80px 4% 80px 4%",
+        "_max-content-width": "1280px"
+      },
+      "text": {
+        "headingRole": "text6",
+        "headingLevel": 2
+      }
+    }
+  }
+}

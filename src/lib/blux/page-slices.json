@@ -1,0 +1,99 @@
+[
+  {
+    "slice_type": "gallery",
+    "variation": "default",
+    "items": [],
+    "primary": {
+      "band": 0
+    }
+  },
+  {
+    "slice_type": "grid_band",
+    "variation": "default",
+    "items": [],
+    "primary": {
+      "band": 1
+    }
+  },
+  {
+    "slice_type": "grid_band",
+    "variation": "default",
+    "items": [],
+    "primary": {
+      "band": 2
+    }
+  },
+  {
+    "slice_type": "grid_band",
+    "variation": "default",
+    "items": [],
+    "primary": {
+      "band": 3
+    }
+  },
+  {
+    "slice_type": "grid_band",
+    "variation": "default",
+    "items": [],
+    "primary": {
+      "band": 4
+    }
+  },
+  {
+    "slice_type": "split_feature",
+    "variation": "default",
+    "items": [],
+    "primary": {
+      "band": 5
+    }
+  },
+  {
+    "slice_type": "grid_band",
+    "variation": "default",
+    "items": [],
+    "primary": {
+      "band": 7
+    }
+  },
+  {
+    "slice_type": "grid_band",
+    "variation": "default",
+    "items": [],
+    "primary": {
+      "band": 8
+    }
+  },
+  {
+    "slice_type": "grid_band",
+    "variation": "default",
+    "items": [],
+    "primary": {
+      "band": 9
+    }
+  },
+  {
+    "slice_type": "grid_band",
+    "variation": "default",
+    "items": [],
+    "primary": {
+      "band": 10
+    }
+  },
+  {
+    "slice_type": "grid_band",
+    "variation": "default",
+    "items": [],
+    "primary": {
+      "band": 11
+    }
+  },
+  {
+    "slice_type": "title_band",
+    "variation": "default",
+    "items": [],
+    "primary": {
+      "band": 12,
+      "heading": "COME BE A PART OF IT."
+    }
+  }
+]

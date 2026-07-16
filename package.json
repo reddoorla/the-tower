@@ -1,5 +1,5 @@
 {
-  "name": "sveltekit-prismic-starter-t-lemos",
+  "name": "the-tower",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -52,6 +52,7 @@
     "node": ">=20"
   },
   "dependencies": {
+    "@fontsource/montserrat": "^5.2.8",
     "@lucide/svelte": "^1.17.0",
     "@prismicio/client": "^7.21.8",
     "@prismicio/svelte": "^2.2.1",

@@ -1,4 +1,10 @@
 <script lang="ts">
+  // The export's declared face (blux-theme.css "Fonts to load" header):
+  // Montserrat 300/400/500/600, self-hosted like the rest of the fleet.
+  import "@fontsource/montserrat/300.css";
+  import "@fontsource/montserrat/400.css";
+  import "@fontsource/montserrat/500.css";
+  import "@fontsource/montserrat/600.css";
   import { PrismicPreview } from "@prismicio/svelte/kit";
   import { page } from "$app/state";
   import { afterNavigate, beforeNavigate } from "$app/navigation";
