@@ -43,21 +43,13 @@
               "kind": "stack",
               "children": [
                 {
-                  "kind": "stack",
-                  "children": [
-                    {
-                      "kind": "heading",
-                      "level": 1,
-                      "html": "the tower",
-                      "role": "text11",
-                      "style": {
-                        "padding": "0px 0px 20px",
-                        "color": "rgb(255, 255, 255)"
-                      }
-                    }
-                  ],
+                  "kind": "heading",
+                  "level": 1,
+                  "html": "the tower",
+                  "role": "text11",
                   "style": {
-                    "padding": "0px 0px 20px"
+                    "padding": "0px 0px 20px",
+                    "color": "rgb(255, 255, 255)"
                   }
                 },
                 {
@@ -72,21 +64,13 @@
                   }
                 },
                 {
-                  "kind": "stack",
-                  "children": [
-                    {
-                      "kind": "heading",
-                      "level": 5,
-                      "html": "Stand above the rest",
-                      "role": "text10",
-                      "style": {
-                        "padding": "20px 0px 0px",
-                        "color": "rgb(255, 255, 255)"
-                      }
-                    }
-                  ],
+                  "kind": "heading",
+                  "level": 5,
+                  "html": "Stand above the rest",
+                  "role": "text10",
                   "style": {
-                    "padding": "20px 0px 0px"
+                    "padding": "20px 0px 0px",
+                    "color": "rgb(255, 255, 255)"
                   }
                 }
               ],
@@ -137,7 +121,6 @@
                 }
               ],
               "style": {
-                "padding": "40px 8% 40px 0px",
                 "_valign": "middle"
               }
             }
@@ -214,17 +197,9 @@
                   "cols": 2
                 },
                 "node": {
-                  "kind": "stack",
-                  "children": [
-                    {
-                      "kind": "subtitle",
-                      "text": "Creative.\nModern.\nInnovative",
-                      "role": "text2",
-                      "style": {
-                        "padding": "20px 0px 0px"
-                      }
-                    }
-                  ],
+                  "kind": "subtitle",
+                  "text": "Creative.\nModern.\nInnovative",
+                  "role": "text2",
                   "style": {
                     "padding": "20px 0px 0px"
                   }
@@ -435,7 +410,8 @@
                         ],
                         "style": {
                           "background-color": "rgb(255, 255, 255)",
-                          "padding": "40px 8%"
+                          "padding": "40px 8%",
+                          "_fill": "column"
                         }
                       }
                     }
@@ -494,7 +470,8 @@
                         ],
                         "style": {
                           "background-color": "rgb(255, 255, 255)",
-                          "padding": "40px 8%"
+                          "padding": "40px 8%",
+                          "_fill": "column"
                         }
                       }
                     }
@@ -553,7 +530,8 @@
                         ],
                         "style": {
                           "background-color": "rgb(255, 255, 255)",
-                          "padding": "40px 8%"
+                          "padding": "40px 8%",
+                          "_fill": "column"
                         }
                       }
                     }
@@ -597,7 +575,8 @@
           ],
           "style": {
             "padding": "80px 12%",
-            "background": "linear-gradient(45deg, rgb(82, 102, 126) 0%, rgb(173, 171, 166) 100%)"
+            "background": "linear-gradient(45deg, rgb(82, 102, 126) 0%, rgb(173, 171, 166) 100%)",
+            "_fill": "column"
           }
         }
       }
@@ -638,7 +617,6 @@
                         }
                       ],
                       "style": {
-                        "padding": "20px 0px 30px",
                         "_valign": "middle"
                       }
                     },
@@ -834,7 +812,8 @@
               ],
               "style": {
                 "background": "linear-gradient(rgb(255, 255, 255) 40%, rgb(175, 173, 168) 100%)",
-                "padding": "80px 12%"
+                "padding": "80px 12%",
+                "_fill": "column"
               }
             }
           },
@@ -934,18 +913,10 @@
                 "kind": "stack",
                 "children": [
                   {
-                    "kind": "stack",
-                    "children": [
-                      {
-                        "kind": "heading",
-                        "level": 4,
-                        "html": "a property within",
-                        "role": "text11",
-                        "style": {
-                          "padding": "0px 0px 30px"
-                        }
-                      }
-                    ],
+                    "kind": "heading",
+                    "level": 4,
+                    "html": "a property within",
+                    "role": "text11",
                     "style": {
                       "padding": "0px 0px 30px"
                     }
@@ -1008,17 +979,9 @@
                   "cols": 2
                 },
                 "node": {
-                  "kind": "stack",
-                  "children": [
-                    {
-                      "kind": "body",
-                      "html": "A collection of 13 buildings offering premier office space among the biggest names in entertainment. Explore 3,200,000 SF of endless possibilities.",
-                      "role": "text1",
-                      "style": {
-                        "padding": "0px 10% 40px 0px"
-                      }
-                    }
-                  ],
+                  "kind": "body",
+                  "html": "A collection of 13 buildings offering premier office space among the biggest names in entertainment. Explore 3,200,000 SF of endless possibilities.",
+                  "role": "text1",
                   "style": {
                     "padding": "0px 10% 40px 0px"
                   }
@@ -1132,34 +1095,18 @@
                       "kind": "stack",
                       "children": [
                         {
-                          "kind": "stack",
-                          "children": [
-                            {
-                              "kind": "heading",
-                              "level": 4,
-                              "html": "A city full of possibilities",
-                              "role": "text0",
-                              "style": {
-                                "padding": "20px 0px 0px"
-                              }
-                            }
-                          ],
+                          "kind": "heading",
+                          "level": 4,
+                          "html": "A city full of possibilities",
+                          "role": "text0",
                           "style": {
                             "padding": "20px 0px 0px"
                           }
                         },
                         {
-                          "kind": "stack",
-                          "children": [
-                            {
-                              "kind": "body",
-                              "html": "Burbank offers a wide range of opportunities from its network of world-renowned studios, accessible airport, and recreational activities.",
-                              "role": "text1",
-                              "style": {
-                                "padding": "20px 0px 0px"
-                              }
-                            }
-                          ],
+                          "kind": "body",
+                          "html": "Burbank offers a wide range of opportunities from its network of world-renowned studios, accessible airport, and recreational activities.",
+                          "role": "text1",
                           "style": {
                             "padding": "20px 0px 0px"
                           }
@@ -1240,7 +1187,8 @@
                         ],
                         "style": {
                           "background-color": "rgb(255, 255, 255)",
-                          "padding": "40px 8%"
+                          "padding": "40px 8%",
+                          "_fill": "column"
                         }
                       }
                     }
@@ -1301,7 +1249,8 @@
                         ],
                         "style": {
                           "background-color": "rgb(255, 255, 255)",
-                          "padding": "40px 8%"
+                          "padding": "40px 8%",
+                          "_fill": "column"
                         }
                       }
                     }
@@ -1372,7 +1321,8 @@
                         ],
                         "style": {
                           "background-color": "rgb(255, 255, 255)",
-                          "padding": "40px 8%"
+                          "padding": "40px 8%",
+                          "_fill": "column"
                         }
                       }
                     }

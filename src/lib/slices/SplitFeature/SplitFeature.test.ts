@@ -90,10 +90,13 @@ describe("SplitFeature slice", () => {
     expect(container.querySelector("[data-split-cell]")).toBeNull();
   });
 
-  it("reserves the source frame height: media.minHeight → a cover frame, no top inset", () => {
+  it("reserves the source frame height: media.minHeight → a cover frame, stretch, no insets", () => {
     // The source's split media can be a bg-cover block that pins its own box
     // (the-tower band 5's 90vh panel) — a natural-height img would collapse
     // the band by hundreds of px. Same cover-frame idiom as CarouselFrames.
+    // The source's intrinsic width/aspect must be stripped: Media would emit
+    // them as inline styles that beat the h-full/w-full cover classes and
+    // leave the frame partially uncovered.
     const framed: Presentation = {
       bands: {
         "1": {
@@ -105,6 +108,8 @@ describe("SplitFeature slice", () => {
               url: "https://cdn/split.jpg",
               fit: "cover",
               minHeight: "90vh",
+              width: 779,
+              aspect: 166.496,
             },
             text: { kind: "body", html: "<p>Manifest text</p>" },
           },
@@ -114,27 +119,40 @@ describe("SplitFeature slice", () => {
     const { container } = render(SplitFeature, {
       props: { slice, context: { presentation: framed } },
     });
-    const mediaCell = container.querySelectorAll(
-      "[data-split-cell]",
-    )[1] as HTMLElement;
+    const cells = container.querySelectorAll("[data-split-cell]");
+    const textCell = cells[0] as HTMLElement;
+    const mediaCell = cells[1] as HTMLElement;
     const frame = mediaCell.querySelector("div.relative") as HTMLElement;
     expect(frame.getAttribute("style")).toContain("min-height: 90vh");
     const img = frame.querySelector("img") as HTMLElement;
     expect(img.className).toContain("object-cover");
     expect(img.className).toContain("absolute");
-    // The reserved frame IS the design — the decorative md: top inset stays off.
+    // No inline width/aspect fighting the cover fill.
+    expect(img.getAttribute("style") ?? "").not.toContain("width: 779px");
+    expect(img.getAttribute("style") ?? "").not.toContain("aspect-ratio");
+    // The reserved frame IS the design: decorative top insets stay off BOTH
+    // cells, and the row stretches columns to the frame instead of centering
+    // (the text side's painted `_fill` panel must cover its full column).
     expect(mediaCell.className).not.toContain("md:pt-[100px]");
+    expect(textCell.className).not.toContain("md:pt-20");
+    const row = mediaCell.parentElement as HTMLElement;
+    expect(row.className).toContain("md:items-stretch");
+    expect(row.className).not.toContain("items-center");
   });
 
-  it("keeps the natural-height img and top inset when the source has no frame height", () => {
+  it("keeps the natural-height img, insets, and centering when the source has no frame height", () => {
     const { container } = render(SplitFeature, {
       props: { slice, context: { presentation } },
     });
-    const mediaCell = container.querySelectorAll(
-      "[data-split-cell]",
-    )[1] as HTMLElement;
+    const cells = container.querySelectorAll("[data-split-cell]");
+    const textCell = cells[0] as HTMLElement;
+    const mediaCell = cells[1] as HTMLElement;
     expect(mediaCell.className).toContain("md:pt-[100px]");
+    expect(textCell.className).toContain("md:pt-20");
     expect(mediaCell.querySelector("div.relative")).toBeNull();
     expect(mediaCell.querySelector("img")?.className).toContain("w-full");
+    expect((mediaCell.parentElement as HTMLElement).className).toContain(
+      "items-center",
+    );
   });
 });

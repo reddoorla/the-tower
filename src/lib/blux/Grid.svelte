@@ -62,6 +62,12 @@
   // wrapper)? Only container/text nodes have a style slot.
   const valignMiddle = (n: RenderNode) =>
     "style" in n && n.style?.["_valign"] === "middle";
+
+  // `_fill: column` — the node sits in a cagridFlexHeight grid cell: the
+  // original stretches the cell's block to the full row height, so its paint
+  // covers the whole column, not just the content box.
+  const fillColumn = (n: RenderNode) =>
+    "style" in n && n.style?.["_fill"] === "column";
 </script>
 
 <!-- Render-faithful fallback: reconstructs a band's parsed node tree.
@@ -95,8 +101,14 @@
        here in sync with GRID_GUTTER in presentation.ts. Cells never grow: Blux
        columns are fixed percentages, so a wrapping grid's short last line keeps
        the same cell widths as the full lines above it. -->
+  <!-- A row that pins its own box and centers (min-height + _valign, the
+       nested block-in-cell parsed to a grid) packs its wrapped lines mid-box
+       via content-center — the row analogue of the stack's flex centering. -->
   <div
-    class="flex w-full flex-wrap gap-y-10 md:gap-x-[4%]"
+    class="flex w-full flex-wrap gap-y-10 md:gap-x-[4%] {valignMiddle(node) &&
+    node.style?.['min-height']
+      ? 'content-center'
+      : ''} {fillColumn(node) ? 'h-full' : ''}"
     style={containerStyle(node.style)}
     data-grid-row
   >
@@ -136,15 +148,20 @@
          its content in it (a peeled valignmiddle container) — e.g. an 80vh
          gradient panel whose copy sits mid-box. The flex column does the
          centering; the inner flow-root keeps the normal-flow rhythm (flex
-         items' margins don't collapse, so children can't be items directly). -->
+         items' margins don't collapse, so children can't be items directly).
+         `_fill: column` (a cagridFlexHeight cell) stretches the box to the
+         full row height so the paint covers the whole column. -->
     <div
-      class="flex flex-col justify-center"
+      class="flex flex-col justify-center {fillColumn(node) ? 'h-full' : ''}"
       style={containerStyle(node.style)}
     >
       <div class="w-full flow-root">{@render stackChildren()}</div>
     </div>
   {:else}
-    <div class="flow-root" style={containerStyle(node.style)}>
+    <div
+      class="flow-root {fillColumn(node) ? 'h-full' : ''}"
+      style={containerStyle(node.style)}
+    >
       {@render stackChildren()}
     </div>
   {/if}

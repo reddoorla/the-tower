@@ -335,6 +335,74 @@ describe("Grid (recursive fallback)", () => {
     expect(inner.querySelector("h1")?.textContent).toBe("the tower");
   });
 
+  it("a `_fill: column` stack stretches to its cell (h-full) so its paint covers the column", () => {
+    // A cagridFlexHeight cell's painted block: the original stretches it to
+    // the full row height — the gradient must not stop at the content box.
+    const { container } = render(Grid, {
+      props: {
+        node: {
+          kind: "stack",
+          style: {
+            background: "linear-gradient(rgb(1, 1, 1), rgb(2, 2, 2))",
+            padding: "80px 12%",
+            _fill: "column",
+          },
+          children: [{ kind: "subtitle", text: "panel copy", role: "text5" }],
+        },
+      },
+    });
+    const outer = container.firstElementChild as HTMLElement;
+    expect(outer.className).toContain("h-full");
+    expect(outer.className).toContain("flow-root");
+    expect(outer.getAttribute("style")).not.toContain("_fill");
+    // Centered min-height boxes stretch the same way when marked.
+    const { container: c2 } = render(Grid, {
+      props: {
+        node: {
+          kind: "stack",
+          style: { "min-height": "80vh", _valign: "middle", _fill: "column" },
+          children: [{ kind: "subtitle", text: "x", role: "text5" }],
+        },
+      },
+    });
+    const centered = c2.firstElementChild as HTMLElement;
+    expect(centered.className).toContain("h-full");
+    expect(centered.className).toContain("justify-center");
+  });
+
+  it("a min-height + _valign ROW packs its lines mid-box (content-center)", () => {
+    // The producer attaches the centered box to rows too (a nested block whose
+    // content parses to a grid) — the row analogue of the stack's centering.
+    const { container } = render(Grid, {
+      props: {
+        node: {
+          kind: "row",
+          style: { "min-height": "80vh", _valign: "middle" },
+          cells: [
+            { token: { cols: 1 }, node: { kind: "subtitle", text: "a" } },
+          ],
+        },
+      },
+    });
+    const row = container.querySelector("[data-grid-row]") as HTMLElement;
+    expect(row.className).toContain("content-center");
+    expect(row.getAttribute("style")).toContain("min-height: 80vh");
+    // A plain row stays unpacked.
+    const { container: c2 } = render(Grid, {
+      props: {
+        node: {
+          kind: "row",
+          cells: [
+            { token: { cols: 1 }, node: { kind: "subtitle", text: "b" } },
+          ],
+        },
+      },
+    });
+    expect(
+      (c2.querySelector("[data-grid-row]") as HTMLElement).className,
+    ).not.toContain("content-center");
+  });
+
   it("a _valign stack WITHOUT a min-height keeps the plain flow-root (row-cell centering only)", () => {
     // Band 6/12's side captions: _valign means self-center against row
     // siblings (the cell class), not an internal flex box.
