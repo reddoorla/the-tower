@@ -126,11 +126,28 @@
        clearfix — a grid cell's stack keeps its blocks' margins inside the
        cell instead of leaking them into (or collapsing with) its siblings.
        A stack may also carry a card box (a peeled wrapper's fill/inset). -->
-  <div class="flow-root" style={containerStyle(node.style)}>
+  {#snippet stackChildren()}
     {#each node.children as child, i (i)}
       <Grid node={child} {map} panelState={panels} />
     {/each}
-  </div>
+  {/snippet}
+  {#if valignMiddle(node) && node.style?.["min-height"]}
+    <!-- A nested block-in-cell that pins its own box (min-height) and centers
+         its content in it (a peeled valignmiddle container) — e.g. an 80vh
+         gradient panel whose copy sits mid-box. The flex column does the
+         centering; the inner flow-root keeps the normal-flow rhythm (flex
+         items' margins don't collapse, so children can't be items directly). -->
+    <div
+      class="flex flex-col justify-center"
+      style={containerStyle(node.style)}
+    >
+      <div class="w-full flow-root">{@render stackChildren()}</div>
+    </div>
+  {:else}
+    <div class="flow-root" style={containerStyle(node.style)}>
+      {@render stackChildren()}
+    </div>
+  {/if}
 {:else if node.kind === "heading"}
   {@const ts = textStyle(node.role, node.style)}
   <svelte:element

@@ -89,4 +89,52 @@ describe("SplitFeature slice", () => {
     });
     expect(container.querySelector("[data-split-cell]")).toBeNull();
   });
+
+  it("reserves the source frame height: media.minHeight → a cover frame, no top inset", () => {
+    // The source's split media can be a bg-cover block that pins its own box
+    // (the-tower band 5's 90vh panel) — a natural-height img would collapse
+    // the band by hundreds of px. Same cover-frame idiom as CarouselFrames.
+    const framed: Presentation = {
+      bands: {
+        "1": {
+          split: {
+            mediaSide: "right",
+            ratio: 40,
+            media: {
+              kind: "image",
+              url: "https://cdn/split.jpg",
+              fit: "cover",
+              minHeight: "90vh",
+            },
+            text: { kind: "body", html: "<p>Manifest text</p>" },
+          },
+        },
+      },
+    };
+    const { container } = render(SplitFeature, {
+      props: { slice, context: { presentation: framed } },
+    });
+    const mediaCell = container.querySelectorAll(
+      "[data-split-cell]",
+    )[1] as HTMLElement;
+    const frame = mediaCell.querySelector("div.relative") as HTMLElement;
+    expect(frame.getAttribute("style")).toContain("min-height: 90vh");
+    const img = frame.querySelector("img") as HTMLElement;
+    expect(img.className).toContain("object-cover");
+    expect(img.className).toContain("absolute");
+    // The reserved frame IS the design — the decorative md: top inset stays off.
+    expect(mediaCell.className).not.toContain("md:pt-[100px]");
+  });
+
+  it("keeps the natural-height img and top inset when the source has no frame height", () => {
+    const { container } = render(SplitFeature, {
+      props: { slice, context: { presentation } },
+    });
+    const mediaCell = container.querySelectorAll(
+      "[data-split-cell]",
+    )[1] as HTMLElement;
+    expect(mediaCell.className).toContain("md:pt-[100px]");
+    expect(mediaCell.querySelector("div.relative")).toBeNull();
+    expect(mediaCell.querySelector("img")?.className).toContain("w-full");
+  });
 });

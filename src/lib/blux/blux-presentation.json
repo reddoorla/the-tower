@@ -91,6 +91,8 @@
                 }
               ],
               "style": {
+                "background": "linear-gradient(45deg, rgb(82, 102, 126) 0%, rgb(175, 173, 168) 100%)",
+                "min-height": "80vh",
                 "_valign": "middle"
               }
             }
@@ -166,6 +168,7 @@
                 }
               ],
               "style": {
+                "background": "linear-gradient(rgb(175, 173, 168) 0%, rgb(255, 255, 255) 100%)",
                 "padding": "200px 4%",
                 "_valign": "middle"
               }
@@ -593,7 +596,8 @@
             }
           ],
           "style": {
-            "padding": "80px 12%"
+            "padding": "80px 12%",
+            "background": "linear-gradient(45deg, rgb(82, 102, 126) 0%, rgb(173, 171, 166) 100%)"
           }
         }
       }
@@ -829,6 +833,7 @@
                 }
               ],
               "style": {
+                "background": "linear-gradient(rgb(255, 255, 255) 40%, rgb(175, 173, 168) 100%)",
                 "padding": "80px 12%"
               }
             }

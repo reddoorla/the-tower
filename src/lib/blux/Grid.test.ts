@@ -301,6 +301,57 @@ describe("Grid (recursive fallback)", () => {
     }
   });
 
+  it("a min-height + _valign stack centers its content in the box, keeping flow rhythm inside", () => {
+    // A nested block-in-cell (e.g. an 80vh gradient panel): the stack pins its
+    // own box and vertically centers the copy. The outer flex column centers;
+    // the inner flow-root wrapper keeps children in NORMAL FLOW so their
+    // margins still collapse (flex items' margins can't).
+    const { container } = render(Grid, {
+      props: {
+        node: {
+          kind: "stack",
+          style: {
+            "min-height": "80vh",
+            background:
+              "linear-gradient(45deg, rgb(82, 102, 126), rgb(175, 173, 168))",
+            _valign: "middle",
+          },
+          children: [
+            { kind: "heading", level: 1, html: "the tower", role: "text11" },
+            { kind: "subtitle", text: "Stand above the rest", role: "text10" },
+          ],
+        },
+      },
+    });
+    const outer = container.firstElementChild as HTMLElement;
+    expect(outer.className).toContain("flex-col");
+    expect(outer.className).toContain("justify-center");
+    // min-height + background apply; the _valign hint never leaks as CSS.
+    expect(outer.getAttribute("style")).toContain("min-height: 80vh");
+    expect(outer.getAttribute("style")).toContain("linear-gradient");
+    expect(outer.getAttribute("style")).not.toContain("_valign");
+    const inner = outer.firstElementChild as HTMLElement;
+    expect(inner.className).toContain("flow-root");
+    expect(inner.querySelector("h1")?.textContent).toBe("the tower");
+  });
+
+  it("a _valign stack WITHOUT a min-height keeps the plain flow-root (row-cell centering only)", () => {
+    // Band 6/12's side captions: _valign means self-center against row
+    // siblings (the cell class), not an internal flex box.
+    const { container } = render(Grid, {
+      props: {
+        node: {
+          kind: "stack",
+          style: { _valign: "middle" },
+          children: [{ kind: "subtitle", text: "caption", role: "text5" }],
+        },
+      },
+    });
+    const outer = container.firstElementChild as HTMLElement;
+    expect(outer.className).toContain("flow-root");
+    expect(outer.className).not.toContain("justify-center");
+  });
+
   it("a panels row shows only the active toggle's cell; the rest stay mounted hidden", async () => {
     // The clickMap shape: stack[widget:map, panels row], toggles drive which
     // panel is visible. Clicking tab 2 hides panel 0 and reveals panel 1.

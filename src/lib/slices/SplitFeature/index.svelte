@@ -54,10 +54,29 @@
         </div>
         <div
           data-split-cell
-          class="min-w-0 grow basis-full md:basis-[calc(var(--cell-basis)_-_2%)] md:pt-[100px]"
+          class="min-w-0 grow basis-full md:basis-[calc(var(--cell-basis)_-_2%)] {split
+            .media.minHeight
+            ? ''
+            : 'md:pt-[100px]'}"
           style:--cell-basis="{split.ratio}%"
         >
-          <Media media={split.media} class="h-auto w-full" />
+          {#if split.media.minHeight}
+            <!-- The source reserves the frame's height (a bg-cover block, e.g.
+                 a 90vh panel) — a natural-height img would collapse the band.
+                 Same cover-frame idiom as CarouselFrames; the reserved frame
+                 IS the design, so the decorative top inset stays off. -->
+            <div
+              class="relative w-full"
+              style={`min-height:${split.media.minHeight}`}
+            >
+              <Media
+                media={split.media}
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+            </div>
+          {:else}
+            <Media media={split.media} class="h-auto w-full" />
+          {/if}
         </div>
       </div>
     </BandContent>
