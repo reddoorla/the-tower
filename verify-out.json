@@ -1,0 +1,140 @@
+{
+  "liveBands": [
+    {
+      "id": "page-block-0",
+      "h": 1080
+    },
+    {
+      "id": "page-block-1",
+      "h": 960
+    },
+    {
+      "id": "page-block-2",
+      "h": 572
+    },
+    {
+      "id": "page-block-3",
+      "h": 800
+    },
+    {
+      "id": "page-block-4",
+      "h": 1210
+    },
+    {
+      "id": "page-block-5",
+      "h": 1080
+    },
+    {
+      "id": "page-block-7",
+      "h": 1170
+    },
+    {
+      "id": "page-block-8",
+      "h": 619
+    },
+    {
+      "id": "page-block-9",
+      "h": 3131
+    },
+    {
+      "id": "page-block-10",
+      "h": 400
+    },
+    {
+      "id": "page-block-11",
+      "h": 1231
+    },
+    {
+      "id": "page-block-12",
+      "h": 600
+    }
+  ],
+  "oursBands": [
+    {
+      "i": 0,
+      "h": 1080
+    },
+    {
+      "i": 1,
+      "h": 152
+    },
+    {
+      "i": 2,
+      "h": 483
+    },
+    {
+      "i": 3,
+      "h": 1040
+    },
+    {
+      "i": 4,
+      "h": 1778
+    },
+    {
+      "i": 5,
+      "h": 312
+    },
+    {
+      "i": 6,
+      "h": 918
+    },
+    {
+      "i": 7,
+      "h": 448
+    },
+    {
+      "i": 8,
+      "h": 2918
+    },
+    {
+      "i": 9,
+      "h": 400
+    },
+    {
+      "i": 10,
+      "h": 1156
+    },
+    {
+      "i": 11,
+      "h": 600
+    }
+  ],
+  "liveTextRuns": 47,
+  "oursTextRuns": 38,
+  "missingFromOurs": [
+    "vision",
+    "amenities",
+    "contact us",
+    "map data ©2026 google",
+    "1 km",
+    "click to toggle between metric and imperial units",
+    "terms",
+    "report a map error",
+    "213.613.3330",
+    "todd.doney@cbre.com",
+    "818.502.6707",
+    "doug.marlow@cbre.com",
+    "besbswy"
+  ],
+  "missingCount": 13,
+  "extraInOurs": [
+    "skip to main content",
+    "logo",
+    "creative. modern. innovative",
+    "© 2026 company name"
+  ],
+  "liveImgs": {
+    "total": 80,
+    "broken": 0
+  },
+  "oursImgs": {
+    "total": 56,
+    "broken": []
+  },
+  "liveConsoleErrors": 1,
+  "oursConsoleErrors": [],
+  "mobile": {
+    "scrollWidth": 375,
+    "innerWidth": 390
+  }
+}

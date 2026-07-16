@@ -1,0 +1,135 @@
+{
+  "liveBands": [
+    {
+      "id": "page-block-0",
+      "h": 1080
+    },
+    {
+      "id": "page-block-1",
+      "h": 960
+    },
+    {
+      "id": "page-block-2",
+      "h": 572
+    },
+    {
+      "id": "page-block-3",
+      "h": 800
+    },
+    {
+      "id": "page-block-4",
+      "h": 1210
+    },
+    {
+      "id": "page-block-5",
+      "h": 1080
+    },
+    {
+      "id": "page-block-7",
+      "h": 1170
+    },
+    {
+      "id": "page-block-8",
+      "h": 619
+    },
+    {
+      "id": "page-block-9",
+      "h": 3131
+    },
+    {
+      "id": "page-block-10",
+      "h": 400
+    },
+    {
+      "id": "page-block-11",
+      "h": 1231
+    },
+    {
+      "id": "page-block-12",
+      "h": 600
+    }
+  ],
+  "oursBands": [
+    {
+      "i": 0,
+      "h": 1080
+    },
+    {
+      "i": 1,
+      "h": 960
+    },
+    {
+      "i": 2,
+      "h": 483
+    },
+    {
+      "i": 3,
+      "h": 1040
+    },
+    {
+      "i": 4,
+      "h": 1777
+    },
+    {
+      "i": 5,
+      "h": 1080
+    },
+    {
+      "i": 6,
+      "h": 917
+    },
+    {
+      "i": 7,
+      "h": 448
+    },
+    {
+      "i": 8,
+      "h": 2916
+    },
+    {
+      "i": 9,
+      "h": 400
+    },
+    {
+      "i": 10,
+      "h": 1156
+    },
+    {
+      "i": 11,
+      "h": 600
+    }
+  ],
+  "liveTextRuns": 42,
+  "oursTextRuns": 38,
+  "missingFromOurs": [
+    "vision",
+    "amenities",
+    "contact us",
+    "213.613.3330",
+    "todd.doney@cbre.com",
+    "818.502.6707",
+    "doug.marlow@cbre.com",
+    "besbswy"
+  ],
+  "missingCount": 8,
+  "extraInOurs": [
+    "skip to main content",
+    "logo",
+    "creative. modern. innovative",
+    "© 2026 company name"
+  ],
+  "liveImgs": {
+    "total": 18,
+    "broken": 0
+  },
+  "oursImgs": {
+    "total": 56,
+    "broken": []
+  },
+  "liveConsoleErrors": 1,
+  "oursConsoleErrors": [],
+  "mobile": {
+    "scrollWidth": 390,
+    "innerWidth": 390
+  }
+}

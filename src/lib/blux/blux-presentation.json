@@ -1428,34 +1428,22 @@
         "toggles": [
           {
             "label": "The Burbank Portfolio",
-            "layers": [
-              "The_Burbank_Portfolio"
-            ],
+            "layers": ["The_Burbank_Portfolio"],
             "panelIndex": 0
           },
           {
             "label": "Studio And Offices",
-            "layers": [
-              "Studios",
-              "Office_Tenants"
-            ],
+            "layers": ["Studios", "Office_Tenants"],
             "panelIndex": 1
           },
           {
             "label": "Retail And Dining",
-            "layers": [
-              "Food_And_Drink",
-              "Retail",
-              "Entertainment"
-            ],
+            "layers": ["Food_And_Drink", "Retail", "Entertainment"],
             "panelIndex": 2
           },
           {
             "label": "Hotel And Services",
-            "layers": [
-              "Hotels",
-              "Services"
-            ],
+            "layers": ["Hotels", "Services"],
             "panelIndex": 3
           }
         ],
