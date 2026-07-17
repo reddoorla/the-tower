@@ -27,6 +27,12 @@
           "config": {
             "label": "Slide caption (order matches the manifest slides)"
           }
+        },
+        "subcaption": {
+          "type": "Text",
+          "config": {
+            "label": "Slide subcaption / second line (e.g. a hero slide's location)"
+          }
         }
       }
     }

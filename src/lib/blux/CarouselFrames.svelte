@@ -2,11 +2,14 @@
   import type { RenderMedia } from "./presentation";
 
   /** One rendered slide: manifest media + caption text (zipped from the
-   * Prismic slice's items by the caller) + the caption's txt-role. */
+   * Prismic slice's items by the caller) + the caption's txt-role. A full-page
+   * hero slide adds a `subcaption` (the project location) under the title. */
   export type CarouselFrame = {
     media: RenderMedia;
     caption?: string;
     role?: string;
+    subcaption?: string;
+    subrole?: string;
   };
 </script>
 
@@ -50,18 +53,29 @@
             media={frame.media}
             class="absolute inset-0 h-full w-full object-cover"
           />
-          {#if frame.caption}
+          {#if frame.caption || frame.subcaption}
             <!-- The source caption: a full-content-width white bar anchored
                  near the top of the slide (the original's .blocks0 bar is
                  1280px wide with 15px/30px padding, inset ~80px from the top)
-                 — not a floating chip. -->
+                 — not a floating chip. A hero slide adds its location as a
+                 second line under the title. -->
             <figcaption
               class="absolute inset-x-0 top-0 flex justify-center px-4 pt-20"
             >
               <span
-                class={`w-full max-w-[1280px] bg-white px-[30px] py-[15px] text-center ${frame.role ? `txt-role-${frame.role}` : ""}`}
-                >{frame.caption}</span
+                class="flex w-full max-w-[1280px] flex-col gap-1 bg-white px-[30px] py-[15px] text-center"
               >
+                {#if frame.caption}
+                  <span class={frame.role ? `txt-role-${frame.role}` : ""}
+                    >{frame.caption}</span
+                  >
+                {/if}
+                {#if frame.subcaption}
+                  <span class={frame.subrole ? `txt-role-${frame.subrole}` : ""}
+                    >{frame.subcaption}</span
+                  >
+                {/if}
+              </span>
             </figcaption>
           {/if}
         </figure>

@@ -143,7 +143,42 @@
       <Grid node={child} {map} panelState={panels} />
     {/each}
   {/snippet}
-  {#if valignMiddle(node) && node.style?.["min-height"]}
+  {#if node.style?.["_overlay"]}
+    <!-- An overlay tile (a feed grid's `layout: behind` card): the image fills
+         a fixed-aspect box and the caption sits OVER it, revealed on hover — so
+         a tile is only as tall as its image, not image + a caption row below.
+         The first child is the media (cover fill); the rest are the caption. -->
+    {@const kids = node.children}
+    {@const mediaChild = kids[0]?.kind === "media" ? kids[0] : undefined}
+    {@const captionChildren = mediaChild ? kids.slice(1) : kids}
+    <div
+      class="group relative w-full overflow-hidden"
+      style="aspect-ratio: {node.style['_overlay'].replace(':', ' / ')}"
+    >
+      {#if mediaChild}
+        <Media
+          media={mediaChild.media}
+          class="absolute inset-0 h-full w-full object-cover"
+        />
+      {/if}
+      <!-- Hover-reveals on pointer devices (faithful to the source's
+           layout:behind). But hover never fires on touch (the dominant traffic
+           for these pages), so on hover-less devices the caption stays visible
+           instead of being permanently hidden; focus-within covers keyboard. -->
+      <div
+        class="absolute inset-0 flex flex-col gap-1 p-2.5 opacity-0 transition-opacity duration-300 group-hover:opacity-100 focus-within:opacity-100 [@media(hover:none)]:opacity-100 {node
+          .style['_overlayValign'] === 'top'
+          ? 'justify-start'
+          : 'justify-center'}"
+        style="background: {node.style['_overlayColor'] ??
+          'rgba(0,0,0,0.55)'}; color: #fff"
+      >
+        {#each captionChildren as child, i (i)}
+          <Grid node={child} {map} panelState={panels} />
+        {/each}
+      </div>
+    </div>
+  {:else if valignMiddle(node) && node.style?.["min-height"]}
     <!-- A nested block-in-cell that pins its own box (min-height) and centers
          its content in it (a peeled valignmiddle container) — e.g. an 80vh
          gradient panel whose copy sits mid-box. The flex column does the
@@ -185,13 +220,29 @@
   {@const ts = textStyle(node.role, node.style)}
   <p class={ts.class} style={ts.style}>{node.text}</p>
 {:else if node.kind === "media"}
-  <!-- Media follows inherited text-align: an `inline-block` image inside a
-       full-width block wrapper, positioned by the ancestor's text-align — Blux
-       `.ib{display:inline-block}` graphics are never force-centered. Intrinsic
-       width still caps to the cell so rules/logos keep their true size. -->
-  <div class="w-full">
-    <Media media={node.media} class="inline-block h-auto max-w-full" />
-  </div>
+  {#if node.media.cropRatio}
+    <!-- A feed grid's cropped tile: the image fills a fixed-aspect box with
+         object-cover, so gallery/portfolio tiles are uniform (the source's
+         `mediaRatio`, e.g. 4:3) instead of flowing at their natural height. -->
+    <div
+      class="relative w-full"
+      style="aspect-ratio: {node.media.cropRatio.replace(':', ' / ')}"
+    >
+      <Media
+        media={node.media}
+        class="absolute inset-0 h-full w-full object-cover"
+      />
+    </div>
+  {:else}
+    <!-- Media follows inherited text-align: an `inline-block` image inside a
+         full-width block wrapper, positioned by the ancestor's text-align —
+         Blux `.ib{display:inline-block}` graphics are never force-centered.
+         Intrinsic width still caps to the cell so rules/logos keep their true
+         size. -->
+    <div class="w-full">
+      <Media media={node.media} class="inline-block h-auto max-w-full" />
+    </div>
+  {/if}
 {:else if node.kind === "raw"}
   <!-- eslint-disable-next-line svelte/no-at-html-tags -->
   {@html node.html}
