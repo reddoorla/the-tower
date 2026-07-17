@@ -74,14 +74,16 @@ describe("Carousel slice", () => {
     const captions = container.querySelectorAll("figcaption");
     // The empty third caption renders no figcaption.
     expect(captions).toHaveLength(2);
-    expect(captions[0]?.textContent).toBe("a place to sit and breathe");
-    expect(captions[1]?.textContent).toBe(
+    expect(captions[0]?.textContent?.trim()).toBe("a place to sit and breathe");
+    expect(captions[1]?.textContent?.trim()).toBe(
       "a calm escape right outside your door",
     );
-    // The caption's txt-role comes from the manifest's caption metadata.
-    expect(captions[0]?.querySelector("span")?.className).toContain(
-      "txt-role-text5",
+    // The caption's txt-role comes from the manifest's caption metadata (on
+    // its own inner span, so a subcaption can share the bar as a second line).
+    const roleSpan = [...captions[0]!.querySelectorAll("span")].find((s) =>
+      s.className.includes("txt-role-text5"),
     );
+    expect(roleSpan?.textContent).toBe("a place to sit and breathe");
   });
 
   it("falls back to a default accessible name when label is empty", () => {

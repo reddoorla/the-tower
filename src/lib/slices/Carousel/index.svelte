@@ -10,7 +10,7 @@
       slice_type: string;
       variation?: string;
       primary: { band?: number | null; label?: string | null };
-      items?: { caption?: string | null }[];
+      items?: { caption?: string | null; subcaption?: string | null }[];
     };
     context?: { presentation?: Presentation };
   };
@@ -25,10 +25,13 @@
     band?.carousel
       ? band.carousel.slides.map((s, i): CarouselFrame => {
           const caption = slice.items?.[i]?.caption || undefined;
+          const subcaption = slice.items?.[i]?.subcaption || undefined;
           return {
             media: s.media,
             ...(caption ? { caption } : {}),
             ...(s.caption?.role ? { role: s.caption.role } : {}),
+            ...(subcaption ? { subcaption } : {}),
+            ...(s.subcaption?.role ? { subrole: s.subcaption.role } : {}),
           };
         })
       : null,

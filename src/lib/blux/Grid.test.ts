@@ -120,6 +120,77 @@ describe("Grid (recursive fallback)", () => {
     expect(wrapper.className).toContain("w-full");
   });
 
+  it("an _overlay stack renders a hover-caption card over a cover image (feed tile)", () => {
+    const { container } = render(Grid, {
+      props: {
+        node: {
+          kind: "stack",
+          style: {
+            _overlay: "4:3",
+            _overlayColor: "rgba(1,2,3,0.85)",
+            _overlayValign: "top",
+          },
+          children: [
+            {
+              kind: "media",
+              media: { kind: "image", url: "https://cdn/t.jpg" },
+            },
+            { kind: "heading", level: 6, html: "Suite", role: "text6" },
+          ],
+        },
+      },
+    });
+    // The box reserves the crop aspect; the image cover-fills it.
+    const box = container.firstElementChild as HTMLElement;
+    expect(box.getAttribute("style")).toContain("aspect-ratio: 4 / 3");
+    expect(box.className).toContain("group");
+    const img = box.querySelector("img") as HTMLElement;
+    expect(img.className).toContain("object-cover");
+    expect(img.className).toContain("absolute");
+    // The caption panel overlays (absolute), hover-revealed, colored, over the image.
+    const panel = [...box.children].find(
+      (c) =>
+        c !== img.parentElement &&
+        (c as HTMLElement).className.includes("group-hover"),
+    ) as HTMLElement;
+    expect(panel).toBeTruthy();
+    expect(panel.getAttribute("style")?.replace(/\s/g, "")).toContain(
+      "rgba(1,2,3,0.85)",
+    );
+    expect(panel.textContent).toContain("Suite");
+    // Reveals on hover (pointer), but stays visible on touch (no-hover) and on
+    // keyboard focus — the caption is never permanently hidden from a visitor.
+    expect(panel.className).toContain("group-hover:opacity-100");
+    expect(panel.className).toContain("[@media(hover:none)]:opacity-100");
+    expect(panel.className).toContain("focus-within:opacity-100");
+    // The _overlay hints never leak as literal CSS.
+    expect(box.getAttribute("style")).not.toContain("_overlay");
+  });
+
+  it("a cropRatio media renders as a fixed-aspect object-cover box (feed tile)", () => {
+    const { container } = render(Grid, {
+      props: {
+        node: {
+          kind: "media",
+          media: {
+            kind: "image",
+            url: "https://cdn/tile.jpg",
+            cropRatio: "4:3",
+          },
+        },
+      },
+    });
+    const img = container.querySelector("img") as HTMLElement;
+    // The image fills the box with object-cover, not inline-block natural size.
+    expect(img.className).toContain("object-cover");
+    expect(img.className).toContain("absolute");
+    expect(img.className).not.toContain("inline-block");
+    // The wrapper reserves the crop aspect (4:3 → "4 / 3").
+    const box = img.parentElement as HTMLElement;
+    expect(box.getAttribute("style")).toContain("aspect-ratio: 4 / 3");
+    expect(box.className).toContain("relative");
+  });
+
   it("applies a text node's export style: inline color/padding, margin-right as a md-scoped var", () => {
     const { container } = render(Grid, {
       props: {

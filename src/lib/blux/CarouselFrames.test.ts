@@ -53,10 +53,40 @@ describe("CarouselFrames", () => {
     const captions = container.querySelectorAll("figcaption");
     // The uncaptioned frame renders no figcaption at all.
     expect(captions).toHaveLength(2);
-    expect(captions[0]?.textContent).toBe("a place to sit and breathe");
-    expect(captions[0]?.querySelector("span")?.className).toContain(
-      "txt-role-text5",
+    expect(captions[0]?.textContent?.trim()).toBe("a place to sit and breathe");
+    // The caption text sits in its own span carrying the txt-role (nested in
+    // the white bar so a subcaption can share the bar as a second line).
+    const captionSpan = [...captions[0]!.querySelectorAll("span")].find((s) =>
+      s.className.includes("txt-role-text5"),
     );
+    expect(captionSpan?.textContent).toBe("a place to sit and breathe");
+  });
+
+  it("renders a hero slide's subcaption as a second line under the title", () => {
+    const heroFrames: CarouselFrame[] = [
+      {
+        media: {
+          kind: "image",
+          url: "https://cdn/hero.jpg",
+          minHeight: "80vh",
+        },
+        caption: "Mar Monte Hotel",
+        role: "text2",
+        subcaption: "Santa Barbara, CA",
+        subrole: "text3",
+      },
+    ];
+    const { container } = render(CarouselFrames, {
+      props: { frames: heroFrames, label: "Hero", columns: 1 },
+    });
+    const fig = container.querySelector("figcaption")!;
+    expect(fig.textContent).toContain("Mar Monte Hotel");
+    expect(fig.textContent).toContain("Santa Barbara, CA");
+    // Both lines carry their own role.
+    const sub = [...fig.querySelectorAll("span")].find((s) =>
+      s.className.includes("txt-role-text3"),
+    );
+    expect(sub?.textContent).toBe("Santa Barbara, CA");
   });
 
   it("honors the source data-columns — all frames visible means no controls", () => {
