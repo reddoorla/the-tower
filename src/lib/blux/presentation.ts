@@ -166,8 +166,7 @@ export type Presentation = { bands: Record<string, BandPresentation> };
  * every page), so pages can't share one flat bands map. Single-page sites
  * keep shipping the flat form. */
 export type SitePresentation =
-  | Presentation
-  | { pages: Record<string, Presentation> };
+  Presentation | { pages: Record<string, Presentation> };
 
 /** One page's slice of a manifest: `uid` selects from a multi-page manifest;
  * a flat single-page manifest ignores it (both existing converted sites and
